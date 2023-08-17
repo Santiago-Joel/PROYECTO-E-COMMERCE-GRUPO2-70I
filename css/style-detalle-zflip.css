@@ -5,4 +5,6 @@ li h6 {
 .card-title {
   margin-bottom: 1em;
 }
-
+.card-text li {
+  margin-bottom: 0.5em;
+}

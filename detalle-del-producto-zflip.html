@@ -13,26 +13,43 @@
     <link rel="stylesheet" href="css/style-detalle-zflip.css" />
   </head>
   <body>
-    <header class="d-flex justify-content-center">
-      <h1>Detalle del producto</h1>
+    <header class="container-fluid px-0">
+      <div class="container-lg ps-0 pe-0">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb mb-4 mx-0 ps-2 pt-2 pb-2 container">
+            <li class="breadcrumb-item">
+              <a href="index.html" class="text-decoration-none text-light"
+                >Rollingtech</a
+              >
+            </li>
+            <li
+              class="breadcrumb-item active text-white-50"
+              aria-current="page"
+            >
+              Detalle del producto
+            </li>
+          </ol>
+        </nav>
+      </div>
     </header>
+
     <main class="container px-0">
-      <div class="card mb-6">
+      <div class="card mb-6 border border-0">
         <div class="row g-0">
-          <div class="d-flex align-items-center col-md-5">
+          <div class="d-flex align-items-center col-md-7">
             <img
               src="/img/categoria-celulares/produc1Celulares.jpg"
               class="img-fluid rounded-end"
               alt="Imagen de Samsung Zflip4"
             />
           </div>
-          <div class="col-md-7 d-flex align-items-center">
+          <div class="col-md-5 d-flex align-items-center">
             <div class="card-body">
               <h5 class="card-title">
                 CELULAR SAMSUNG Z FLIP 4 SM-F721BZAJARO GRAFITO
               </h5>
               <h2>$ 474.999</h2>
-              <div class="d-grid">
+              <div class="d-grid d-md-block">
                 <a class="btn btn-primary" href="#" role="button">COMPRAR</a>
               </div>
             </div>
@@ -58,7 +75,77 @@
           </div>
         </div>
       </div>
-      <section class="comentarios"></section>
+
+      <div class="card-text mt-3 px-4 comentarios col-md-7 col-lg-5">
+        <div class="h4 pb-2 mb-4 text-danger border-bottom border-danger">
+          Comentarios
+        </div>
+
+        <div class="d-flex justify-content-center align-items-center">
+          <div class="container px-0">
+            <div class="toast-header">
+              <img
+                src="/img/icono-usuario/persona 1.jpg"
+                class="rounded me-2"
+                alt="icono-usuario"
+                width="40"
+                height="40"
+              />
+              <strong class="me-auto">Matias Russo</strong>
+              <small>Hace 11 minutos</small>
+            </div>
+            <div class="toast-body mt-3">
+              <p class="bg-body-secondary px-3 py-2 ">
+                Les recomiendo mucho este dispositivo, exelente camara, pantalla
+                y colores.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-center align-items-center">
+          <div class="container px-0">
+            <div class="toast-header">
+              <img
+                src="/img/icono-usuario/persona 2.jpg"
+                class="rounded me-2"
+                alt="icono-usuario"
+                width="40"
+                height="40"
+              />
+              <strong class="me-auto">Susi Martinez</strong>
+              <small>Hace 26 minutos</small>
+            </div>
+            <div class="toast-body mt-3">
+              <p class="bg-body-secondary px-3 py-2 ">
+                Quedé sorprendida por la fluidez que tiene éste disposito, lo
+                recomiendo muchisimo. Si estas buscando un celular grande y
+                versatil es éste.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center align-items-center">
+          <div class="container px-0">
+            <div class="toast-header">
+              <img
+                src="/img/icono-usuario/persona 4.jpg"
+                class="rounded me-2"
+                alt="icono-usuario"
+                width="40"
+                height="40"
+              />
+              <strong class="me-auto">Pablo Urrutia</strong>
+              <small>Hace 50 minutos</small>
+            </div>
+            <div class="toast-body mt-3">
+              <p class="bg-body-secondary px-3 py-2 ">
+                Lo tienen mis amigos y estan contentos, mi primera impresion es que es bellisimo por donde lo mires.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
     <script

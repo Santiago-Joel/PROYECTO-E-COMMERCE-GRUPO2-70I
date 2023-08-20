@@ -1,0 +1,18 @@
+header {
+  background-color: black;
+}
+main h1 {
+  padding-left: 0.12em;
+  margin-bottom: 1em;
+}
+
+/* efecto al pasar el mouse */
+
+.productos {
+  transition: all 0.05s linear;
+  cursor: pointer;
+}
+
+.productos:hover {
+  transform: scale(1.01);
+}

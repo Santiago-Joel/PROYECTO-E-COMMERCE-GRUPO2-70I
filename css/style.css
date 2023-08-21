@@ -1,0 +1,9 @@
+body{
+    min-height: 200vh;
+}
+
+.banner img{
+    height: 10vh;
+    margin-left: 2vh;
+}
+

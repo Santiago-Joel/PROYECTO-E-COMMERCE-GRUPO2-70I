@@ -3,19 +3,19 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Detalle del producto</title>
+    <title>Registro</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/style-detalle-del-producto.css" />
+    <link rel="stylesheet" href="/css/style-registro.css" />
     <link rel="stylesheet" href="/css/style-footer.css" />
   </head>
   <body>
     <header>
-      <nav class="navbar sticky-top navbar-expand-md navbar-dark bg-dark">
+      <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="indexl.html">Rolling Tech</a>
           <button
@@ -122,163 +122,148 @@
         </div>
       </nav>
     </header>
-
     <section class="container-fluid px-0" id="barra">
       <div class="container-lg ps-0 pe-0">
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb mb-4 mx-0 ps-2 pt-2 pb-2 container">
             <li class="breadcrumb-item">
-              <a
-                href="/detalle-de-categoria-celulares.html"
-                class="text-decoration-none text-light"
-                >Celulares</a
-              >
+              <a href="#" class="text-decoration-none text-light">Login</a>
             </li>
             <li
               class="breadcrumb-item active text-white-50"
               aria-current="page"
             >
-              Detalle del producto
+              Registro
             </li>
           </ol>
         </nav>
       </div>
     </section>
-    <main class="container px-0">
-     <div class="container mb-4 border border-0">
-        <div class="row">
-          <div class="d-flex align-items-center col-md-7">
-            <img
-              src="/img/categoria-celulares/produc1Celulares.jpg"
-              class="img-fluid rounded-end col-md-12"
-              alt="Imagen de Samsung Zflip4"
+    <main>
+      <div class="container mt-4 mb-4">
+        <form
+          class="row g-3"
+          method="post"
+          action="#"
+          enctype="application/x-www-form-urlencoded"
+        >
+          <div class="col-md-4">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input
+              type="text"
+              name="nombre"
+              class="form-control"
+              id="nombre"
+              maxlength="15"
+              required
             />
           </div>
-          <div class="col-md-5 d-flex align-items-center">
-            <div class="card-body">
-              <h5 class="card-title">
-                CELULAR SAMSUNG Z FLIP 4 SM-F721BZAJARO GRAFITO
-              </h5>
-              <h2>$ 474.999</h2>
-              <div class="d-grid d-md-block">
-                <a class="btn btn-primary col-md-7" href="#" role="button"
-                  >COMPRAR</a
-                >
-              </div>
-            </div>
+          <div class="col-md-4">
+            <label for="apellido" class="form-label">Apellido</label>
+            <input
+              type="text"
+              name="apellido"
+              class="form-control"
+              id="apellido"
+              maxlength="15"
+              required
+            />
           </div>
-        </div>
-      </div> 
-
-      <div class="card-text mt-3 px-3">
-        <div class="h4 pb-2 mb-4 text-danger border-bottom border-danger">
-          Descripción del Producto
-        </div>
-        <div class="descripcion-producto">
-          El Samsung Galaxy Z Flip4 itera sobre el mismo diseño de sus
-          antecesores, mejorando su hardware. Con una pantalla AMOLED de 6.7
-          pulgadas a resolución FHD+ y tasa de refresco de 120Hz al estar
-          abierto, el Galaxy Z Flip 4 tiene una pantalla cover de 1.9 pulgadas
-          para notificaciones y atajos. Potenciado por un procesador Qualcomm
-          Snapdragon 8+ Gen 1, el Galaxy Z Flip4 cuenta con 8GB de RAM y hasta
-          512GB de almacenamiento interno. En cuanto a fotografía, el Galaxy Z
-          Fold 4 conserva la cámara dual de 12MP y su cámara selfie es de
-          10MP. Una batería de 3700 mAh alimenta al Galaxy Z Flip 4, que
-          completa sus características con lector de huellas lateral,
-          parlantes stereo, resistencia al agua y corre Android 12.
-        </div>
-      </div>
-    </div>
-    <section class="card-text mt-3 px-3 comentarios">
-      <div class="container-comentarios col-md-5 col-lg-6">
-        <div class="h4 pb-2 mb-4 text-danger border-bottom border-danger">
-          Comentarios
-        </div>
-
-        <div class="d-flex justify-content-center align-items-center">
-          <div class="container px-0">
-            <div class="toast-header">
-              <img
-                src="/img/icono-usuario/persona 1.jpg"
-                class="rounded me-2"
-                alt="icono-usuario"
-                width="40"
-                height="40"
+          <div class="col-md-4">
+            <label for="usuario" class="form-label">Usuario</label>
+            <div class="input-group">
+              <span class="input-group-text" id="inputGroupPrepend2">@</span>
+              <input
+                type="text"
+                name="usuario"
+                class="form-control"
+                id="usuario"
+                maxlength="20"
+                aria-describedby="inputGroupPrepend2"
+                required
               />
-              <strong class="me-auto">Matias Russo</strong>
-              <small>Hace 11 minutos</small>
-            </div>
-            <div class="toast-body mt-3">
-              <p class="bg-body-secondary px-3 py-2">
-                Les recomiendo mucho este dispositivo, exelente camara,
-                pantalla y colores.
-              </p>
             </div>
           </div>
-        </div>
 
-        <div class="d-flex justify-content-center align-items-center">
-          <div class="container px-0">
-            <div class="toast-header">
-              <img
-                src="/img/icono-usuario/persona 2.jpg"
-                class="rounded me-2"
-                alt="icono-usuario"
-                width="40"
-                height="40"
-              />
-              <strong class="me-auto">Susi Martinez</strong>
-              <small>Hace 26 minutos</small>
-            </div>
-            <div class="toast-body mt-3">
-              <p class="bg-body-secondary px-3 py-2">
-                Quedé sorprendida por la fluidez que tiene éste disposito, lo
-                recomiendo muchisimo. Si estas buscando un celular grande y
-                versatil es éste.
-              </p>
-            </div>
+          <div class="col-md-4">
+            <label for="contraseña" class="form-label">Contraseña</label>
+            <input
+              type="password"
+              name="contraseña"
+              class="form-control"
+              id="contraseña"
+              maxlength="25"
+              required
+            />
           </div>
-        </div>
-        <div class="d-flex justify-content-center align-items-center">
-          <div class="container px-0">
-            <div class="toast-header">
-              <img
-                src="/img/icono-usuario/persona 4.jpg"
-                class="rounded me-2"
-                alt="icono-usuario"
-                width="40"
-                height="40"
-              />
-              <strong class="me-auto">Pablo Urrutia</strong>
-              <small>Hace 50 minutos</small>
-            </div>
-            <div class="toast-body mt-3">
-              <p class="bg-body-secondary px-3 py-2">
-                Lo tienen mis amigos y estan contentos, mi primera impresion
-                es que es bellisimo por donde lo mires.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="text-area mt-1">
-        <div class="form-floating">
-          <textarea
-            class="form-control"
-            placeholder="Leave a comment here"
-            id="floatingTextarea2"
-            style="height: 100px"
-          ></textarea>
-          <label for="floatingTextarea2">Dejanos tu comentario</label>
-        </div>
-        <div class="mt-2">
-          <a class="btn btn-primary col" href="#" role="button">Enviar</a>
-        </div>
-      </div>
-    </section>
 
+          <div class="col-md-4">
+            <label for="email" class="form-label">Email</label>
+            <input
+              type="email"
+              name="email"
+              class="form-control"
+              id="email"
+              placeholder="nombre@ejemplo.com"
+              required
+            />
+          </div>
+
+          <div class="col-md-2">
+            <label for="telefono" class="form-label">Teléfono</label>
+            <input
+              type="tel"
+              name="telefono"
+              class="form-control"
+              id="telefono"
+              maxlength="15"
+              required
+            />
+          </div>
+          <div class="col-md-2">
+            <label for="codigopostal" class="form-label">Código postal</label>
+            <input
+              type="text"
+              name="codigo postal"
+              class="form-control"
+              id="codigopostal"
+              maxlength="10"
+              required
+            />
+          </div>
+
+          <div class="col-md-4">
+            <label for="domicilio" class="form-label">Domicilio</label>
+            <input
+              type="text"
+              name="domicilio"
+              class="form-control"
+              id="domicilio"
+              maxlength="50"
+              required
+            />
+          </div>
+
+          <div class="col-12">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="invalidCheck2"
+                required
+              />
+              <label class="form-check-label" for="invalidCheck2">
+                Acepto los terminos y condiciones
+              </label>
+            </div>
+          </div>
+          <div class="col-12">
+            <button class="btn btn-primary" type="submit">Registrarme</button>
+          </div>
+        </form>
+      </div>
     </main>
-   
+
     <footer class="footer">
       <div class="footer__info">
         <div class="footer_column footer_contact">
@@ -319,6 +304,7 @@
         <p>&copy; 2023 Rolling Tech. Todos los derechos reservados.</p>
       </div>
     </footer>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"

@@ -1,7 +1,4 @@
-header{
-  background-color: #090909;
-}
-header div{
+#barra {
   background-color: #090909;
 }
 li h6 {
@@ -14,8 +11,10 @@ li h6 {
 .card-text li {
   margin-bottom: 0.5em;
 }
-.comentarios p{
+.comentarios p {
   border-top-right-radius: 1em;
   border-bottom-left-radius: 1em;
 }
-
+footer {
+  margin-top: 1em;
+}

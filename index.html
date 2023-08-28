@@ -91,7 +91,7 @@
               <li class="nav-item">
                 <a
                   class="nav-link active"
-                  href="carrito.html"
+                  href="detalle_carrito.html"
                   tabindex="-1"
                   aria-disabled="true"
                   >Carrito
@@ -103,6 +103,8 @@
                   href="#"
                   tabindex="-1"
                   aria-disabled="true"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
                   >Login
                 </a>
               </li>
@@ -121,8 +123,71 @@
           </div>
         </div>
       </nav>
-    </header>
-    <footer class="footer">
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="col-md-3 col-md-4 col-sm-6">
+                <img src="/img/icono-usuario/icono_usuario.jpg" width="70px"
+                height="70px" class="rounded-circle img-fluid">
+              </div>
+              <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label"
+                    >Email</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label"
+                    >Password</label
+                  >
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="exampleInputPassword1"
+                  />
+                </div>
+                <label for="recuperarpassword" class="form-label"
+                  ><a href="error404.html">Recuperar Contraseña</a>
+                </label
+              </form>
+            </div>
+            <div class="modal-footer">
+              <div class="d-grid gap-4 col-6 mx-auto">
+                <a href="error404.html" class="btn btn-primary">login</a>
+                <a href="registro.html" class="btn btn-secondary">Registro</a>
+                <a href="error404.html" class="class="btn btn-primary"><img
+                  src="/img/icono-usuario/btn_google_signin_dark_normal_web.png" alt="Login con Google"></a>
+                <a href="error404.html" class="class="btn btn-primary"><img
+                    src="/img/icono-usuario/boton_facebook.png" alt="Login con Facebook"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
       <div class="footer__info">
         <div class="footer_column footer_contact">
           <h3>Contacto</h3>
